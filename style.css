@@ -1,0 +1,353 @@
+* :root {
+    box-sizing: border-box;
+
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Motiva Sans", Sans-serif;
+    max-width: auto;
+    color: #c6d4df;
+    background: #1b2838;
+
+}
+
+body {
+    background-image: url("");
+}
+
+
+header {
+    background: #171a21;
+    height: 8%;
+
+    box-shadow: 0 0 7px 0 rgb(0 0 0 / 75%);
+    padding: 1em;
+    margin-bottom: 1em;
+
+    position: relative;
+
+}
+
+.container-header {
+
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-header {
+    display: inline-block;
+}
+
+#nav-container {
+    margin-left: 2em;
+    vertical-align: middle
+}
+
+#nav-container a {
+    padding: 0.8em;
+    text-decoration: none;
+    color: #c6d4df;
+}
+
+#nav-container a:hover {
+    color: #ffffff;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+#search-box {
+    background-color: #316282;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: #fff;
+    height: 26px;
+    padding: 0px 6px;
+    position: relative;
+
+}
+
+#search-box .default {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    margin-top: 2px;
+    margin-left: 8px;
+    width: calc(100% - 25px - 8px);
+    outline: none;
+    line-height: 26px;
+    font-size: 1em;
+    font-family: "Motiva Sans", Sans-serif;
+
+}
+
+#icon-search {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    right: 0;
+
+}
+
+#icon-search:hover {
+    background-color: #c6d4df;
+}
+
+.category {
+    color: #66c0f4;
+    list-style-type: none;
+    margin-top: 1em;
+    border-top: 2px solid #316282;
+    cursor: pointer;
+
+}
+
+.category li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 0.4em;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1.5em;
+    border-radius: 2px;
+    background-color: #316282;
+    color: #8fc8ee;
+
+}
+
+.category li:hover {
+    color: #ffff;
+    filter: brightness(130%)
+}
+
+#center {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conten-display {
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 10px 05px 10px;
+    letter-spacing: 0.03em;
+    font-weight: normal;
+    padding-top: 2px;
+}
+
+#display {
+
+    border: 1 solid red;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.game-wapper {
+    width: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.game-wapper:hover {
+    lighting-color: #ffffff;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.children {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.children img:hover {
+    filter: brightness(130%)
+}
+
+.game-info {
+    width: 300px;
+    padding: 5px;
+    color: #acdbf5;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+    background: linear-gradient(-45deg, rgba(64, 121, 153, 1) 5%, rgba(42, 62, 89, 1) 95%);
+    height: 45px;
+    align-items: center;
+}
+
+.show-game .imdetail {
+    display: flex;
+    background-position: bottom;
+    padding-bottom: 1px;
+    margin: 0px auto;
+    padding: 16px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.title {
+    color: white;
+    font-family: Motiva Sans, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 32px;
+    text-overflow: ellipsis;
+    font-weight: normal;
+    padding: 0;
+}
+
+.price {
+    color: #acdbf5;
+    display: inline-block;
+    padding: 0 3px;
+    line-height: 17px;
+}
+
+.container-img-backgroud {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background: #171a21; */
+    padding: 1em;
+    border-radius: 5px;
+    margin-top: 1em;
+
+}
+
+.img-detail-left {
+    width: 600px;
+    filter: brightness(120%);
+}
+
+.img-backgroud {
+    width: 60%;
+
+}
+
+.detail-contain {
+    width: 40%;
+}
+
+.detail-description {
+    max-height: 120px;
+    max-width: 350px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 15px;
+    padding: 0 1em;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+.game-informations {
+    font-size: 12px;
+    padding: 16px;
+    min-width: 94px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #66c0f4;
+    line-height: 20px;
+}
+
+.tas-contain {
+    margin-top: 1em;
+    /* background: #171a21; */
+    font-size: 12px;
+    /* padding: 16px; */
+    width: auto;
+    border-radius: 5px;
+}
+
+.tag {
+    display: inline-block;
+    line-height: 19px;
+    padding: 0 7px;
+    color: #67c1f5;
+    background-color: rgba(103, 193, 245, 0.2);
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 4px;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #67c1f5;
+
+}
+
+.tag a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tag a:hover {
+    filter: brightness(150%);
+}
+
+/* ////////Loading/////// */
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #67c1f5;
+    border-bottom: 16px solid #67c1f5;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
